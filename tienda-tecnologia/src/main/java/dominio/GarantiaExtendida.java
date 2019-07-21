@@ -10,9 +10,10 @@ public class GarantiaExtendida {
     private double precioGarantia;
     private String nombreCliente;
 
-    public GarantiaExtendida(Producto producto) {
+    public GarantiaExtendida(Producto producto, String nombreCliente) {
         this.fechaSolicitudGarantia = new Date();
         this.producto = producto;
+        this.nombreCliente = nombreCliente;
     }
 
     public GarantiaExtendida(Producto producto, Date fechaSolicitudGarantia, Date fechaFinGarantia,
